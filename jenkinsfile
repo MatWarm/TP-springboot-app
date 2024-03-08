@@ -11,6 +11,7 @@ pipeline {
 			steps{				
 				echo 'toto'
 				sh 'whoami'
+				sh "chmod +x -R ${env.WORKSPACE}"
 				sh './mvnw test'
 				}
 			}
