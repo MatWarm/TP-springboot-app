@@ -8,11 +8,10 @@ pipeline {
 			}
 
 		stage ('Test') {
-			steps{
-
+			steps{				
 				echo 'toto'
-				//sh './mvnw-test'
-				// bat '.\mvnw test'
+				sh './mvnw-test'
+				bat 'whoami'
 				}
 			}
 		}
